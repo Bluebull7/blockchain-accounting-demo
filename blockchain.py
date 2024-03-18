@@ -56,3 +56,8 @@ class Blockchain(ABC):
     @abstractmethod
     def get_block_by_index(self, index):
         pass
+
+class TransactionService(ABC):
+    @abstractmethod
+    def generate_transactions(self, num_transactions):
+        pass
